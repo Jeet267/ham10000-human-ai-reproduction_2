@@ -1,0 +1,49 @@
+{
+  "fold": 0,
+  "n_test": 1441,
+  "accuracy": 0.8008327550312283,
+  "mean_recall": 0.7872494996525597,
+  "mean_recall_ci95": [
+    0.7324611069888824,
+    0.8341484720872017
+  ],
+  "macro_auc": 0.9644597097727868,
+  "malignant": {
+    "sensitivity": 0.8438661710037175,
+    "specificity": 0.8677474402730375,
+    "auc": 0.9370376949135338
+  },
+  "ece": 0.062345648912155834,
+  "nll": 0.5301378965377808,
+  "train_info": {
+    "total_min": 34.79637860059738,
+    "epochs": 34,
+    "gpu": "Tesla T4"
+  },
+  "config": {
+    "seed": 42,
+    "arch": "resnet34",
+    "img_size": 224,
+    "batch_size": 32,
+    "lr": 0.0001,
+    "lr_factor": 0.1,
+    "lr_patience": 3,
+    "min_lr": 1e-09,
+    "max_epochs": 100,
+    "early_stop_patience": 10,
+    "n_folds": 5,
+    "fold": 0,
+    "test_frac_splits": 7,
+    "cache_side": 320,
+    "num_workers": 2,
+    "use_amp": true
+  },
+  "paper": {
+    "accuracy": 0.803,
+    "mean_recall": 0.777,
+    "mean_recall_ci95": [
+      0.703,
+      0.851
+    ]
+  }
+}
